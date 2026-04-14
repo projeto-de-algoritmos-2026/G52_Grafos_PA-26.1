@@ -36,5 +36,5 @@ Outros mapas que foram usados como referencia podem ser encontrados em:
 - Caso queira ver a versao com frontend execute um python -m http.server                                                                                  
 
 ### Link da apresentação
-[Vídeo](https://drive.google.com/file/d/19TjMwCarvnNynNW2CISY93UW3xV34ed6/view?usp=sharing)<br>
+[Vídeo](https://youtu.be/6kQXqLaqxgc)<br>
 
