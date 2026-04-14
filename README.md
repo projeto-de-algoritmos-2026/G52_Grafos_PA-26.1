@@ -24,30 +24,17 @@ Outros mapas que foram usados como referencia podem ser encontrados em:
 [Outros Mapas](./img/)
 
 
-
-
-
-
-
 ## Screenshots 
-![Problema 2065](./Assets/Screenshot%202025-11-24%20at%2021-20-46%20Maximum%20Path%20Quality%20of%20a%20Graph%20-%20LeetCode.png) <br>
+![Imagem 1](./img/Screenshot%202026-04-13%20at%2023-47-12%20PokéRoute%20-%20Kanto.png) <br>
 
 
 ## Instalação 
 **Linguagem**: Python<br>
-**Framework**: Os códigos rodam diretamenta no [LeetCode](https://leetcode.com/).<br>
-
-## Uso 
-### Acesse o LeetCode
-- Crie uma conta gratuita no LeetCode (caso ainda não tenha).
-- Navegue até a página dos problemas específicos citados acima.
 
 ### Execute a Solução
-- No editor de código do LeetCode:
-- Copie e cole a solução fornecida (em Python).
-- Clique no botão Run para testar com os casos de exemplo.
-- Verifique se a saída corresponde ao esperado ou se aparece **Accepted** na secção **Test Result**.
+- Basta entrar na pasta src e compilar o arquivo main.py
+- Caso queira ver a versao com frontend execute um python -m http.server                                                                                  
 
 ### Link da apresentação
-[Vídeo 1](https://drive.google.com/file/d/19TjMwCarvnNynNW2CISY93UW3xV34ed6/view?usp=sharing)<br>
-[Vídeo 2](https://drive.google.com/file/d/1LPDV9ivnvSgZpSRURfLISrEMzg5N9m1f/view?usp=sharing)
+[Vídeo](https://drive.google.com/file/d/19TjMwCarvnNynNW2CISY93UW3xV34ed6/view?usp=sharing)<br>
+

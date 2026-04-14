@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokéRoute - Kanto</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <py-config>
+        [[fetch]]
+        files = ["main2.py", "grafo.py", "dijkstra.py"]
+    </py-config>
+
+    <style>
+        :root {
+            --poke-red: #ff1f1f;
+            --poke-blue: #3b4cca;
+            --poke-yellow: #ffde00;
+            --bg-color: #f0f2f5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+
+        .container {
+
+            background: white;
+
+            padding: 2rem;
+
+            border-radius: 20px;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+            max-width: 700px;
+
+            width: 100%;
+
+            text-align: center;
+
+            border-top: 10px solid var(--poke-red);
+
+        }
+
+
+        h1 {
+            color: var(--poke-blue);
+            margin-bottom: 1.5rem;
+        }
+
+
+        .map-wrapper {
+
+            border: 4px solid #333;
+
+            border-radius: 12px;
+
+            overflow: hidden;
+
+            margin-bottom: 1.5rem;
+
+            background: #eee;
+
+        }
+
+
+        .map-wrapper img {
+
+            display: block;
+
+            max-width: 100%;
+
+            height: auto;
+
+            transition: transform 0.3s;
+
+        }
+
+
+        .controls {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr auto;
+
+            gap: 15px;
+
+            align-items: end;
+
+            background: #f9f9f9;
+
+            padding: 20px;
+
+            border-radius: 12px;
+
+        }
+
+
+        .input-group {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+
+        select {
+
+            width: 100%;
+
+            padding: 10px;
+
+            border-radius: 8px;
+
+            border: 2px solid #ddd;
+
+            background: white;
+
+            cursor: pointer;
+
+        }
+
+
+        button {
+
+            background-color: var(--poke-red);
+
+            color: white;
+
+            border: none;
+
+            padding: 12px 25px;
+
+            border-radius: 8px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            transition: background 0.2s, transform 0.1s;
+
+        }
+
+
+        button:hover {
+            background-color: #cc1a1a;
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+
+        #resultado {
+
+            margin-top: 20px;
+
+            padding: 15px;
+
+            border-radius: 10px;
+
+            background: #e3f2fd;
+
+            border-left: 5px solid var(--poke-blue);
+
+            text-align: left;
+
+            min-height: 60px;
+
+            color: #2c3e50;
+
+        }
+
+
+        .tag-caminho {
+
+            display: inline-block;
+
+            background: var(--poke-blue);
+
+            color: white;
+
+            padding: 2px 8px;
+
+            border-radius: 4px;
+
+            margin: 2px;
+
+            font-size: 0.9em;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1>📍 Pokémon Dijkstra </h1>
+
+
+        <div class="map-wrapper">
+
+            <img src="img/Johto-Kanto_Map2.png" alt="Mapa de Kanto">
+
+        </div>
+
+
+        <div class="controls">
+
+            <div class="input-group">
+
+                <label for="inicio">Origem</label>
+
+                <select id="inicio"></select>
+
+            </div>
+
+
+
+            <div class="input-group">
+
+                <label for="destino">Destino</label>
+
+                <select id="destino"></select>
+
+            </div>
+
+
+            <button id="btn-calcular">Calcular Rota</button>
+
+        </div>
+
+
+        <div id="resultado">
+
+            Aguardando seleção...
+
+        </div>
+
+    </div>
+
+
+    <script type="mpy" src="main2.py"></script>
+
+
+</body>
+
+</html>
